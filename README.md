@@ -89,4 +89,4 @@ password: `Admin123`
 
 
 ## скрины
-! [SWG] (/README_assets/swg/dc.png)
+![SWG](README_assets/swg/dc.png)
