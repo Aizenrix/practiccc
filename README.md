@@ -89,4 +89,18 @@ password: `Admin123`
 
 
 ## скрины
-![SWG](README_assets/swg/dc.png)
+
+### swagger docs
+![swagger docs](README_assets/swg/dc.png)
+
+### регистрация пользователя
+![регистрация пользователя](README_assets/swg/reg.png)
+
+### вход и получение токена
+![вход и токен](README_assets/swg/log.png)
+
+### авторизация в swagger
+![авторизация в swagger](README_assets/swg/auth.png)
+
+### текущий пользователь auth me
+![текущий пользователь](README_assets/swg/me.png)
