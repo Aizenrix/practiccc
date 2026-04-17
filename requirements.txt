@@ -4,5 +4,5 @@ sqlalchemy
 passlib
 python-jose
 redis
-bcrypt
+bcrypt==4.0.1
 python-multipart
