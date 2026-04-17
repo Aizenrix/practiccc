@@ -3,6 +3,7 @@ import json
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
 
+from app.core.config import TASKS_CACHE_TTL_SECONDS
 from app.db.redis_client import redis_client
 from app.models.user import User
 from app.repositories.task_repository import TaskRepository
@@ -44,7 +45,7 @@ class TaskService:
         tasks = self.task_repo.list_by_owner(user_id)
         result = [self._serialize_task(task) for task in tasks]
         if redis_client:
-            redis_client.setex(cache_key, 60, json.dumps(result, ensure_ascii=False))
+            redis_client.setex(cache_key, TASKS_CACHE_TTL_SECONDS, json.dumps(result, ensure_ascii=False))
         return result
 
     def get_task_for_user(self, task_id: int, current_user: User):

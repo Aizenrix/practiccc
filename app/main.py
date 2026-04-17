@@ -32,6 +32,11 @@ def root():
     return {"message": "Task Tracker API is running"}
 
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 app.include_router(auth_router)
 app.include_router(tasks_router)
 app.include_router(admin_router)
