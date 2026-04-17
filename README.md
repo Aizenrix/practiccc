@@ -104,3 +104,13 @@ password: `Admin123`
 
 ### текущий пользователь auth me
 ![текущий пользователь](README_assets/swg/me.png)
+
+### Логин админа
+![текущий пользователь](README_assets/swg/admlog.png)
+
+### Отношение админа к пользователю
+![текущий пользователь](README_assets/swg/admuser.png)
+
+### Докер + подгруз
+![текущий пользователь](README_assets/swg/docker1.png)
+![текущий пользователь](README_assets/swg/docker2.png)
