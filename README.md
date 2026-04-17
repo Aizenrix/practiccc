@@ -86,3 +86,7 @@ docker compose up --build
 login: `admin`
 password: `Admin123`
 
+
+
+## скрины
+! [SWG] (/README_assets/swg/dc.png)
